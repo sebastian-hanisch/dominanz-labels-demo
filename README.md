@@ -1,5 +1,7 @@
 # Dominanz: wann darf ein Label gehen? – Streamlit-Demo
 
+**[→ Demo live ausprobieren](https://sebastianhanisch-dominanz-labels-demo.streamlit.app/)**
+
 Demo zum Thema Ressourcenwege und Spaltenerzeugung auf der Website „Sebastian Hanisch – Operations Research und Machine Learning“. Das **Label-Verfahren** sucht
 den Weg mit den kleinsten **reduzierten Kosten** (Weglänge minus die Dualpreise der besuchten Kunden), mit Zeitfenstern, Last und höchstens einem Besuch je Kunde; es ist das Preisproblem der
 Spaltenerzeugung. Jeder Teilweg ist ein **Label** (Kosten, Zeit, Last, besuchte Kunden). Diese Demo fragt nur eines: **Welches Label darf gestrichen werden, ohne den besten Weg zu verlieren?**
