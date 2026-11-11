@@ -1,0 +1,280 @@
+{
+ "quelle": "run_p02.log (Teil B) und out_v1_n30.txt",
+ "teil_b": [
+  {
+   "breite": 80,
+   "n": 7,
+   "labels_ohne_median": 94,
+   "labels_voll_median": 60,
+   "faktor_median": 1.35,
+   "faktor_max": 2.14,
+   "faktor_mittel": 1.46,
+   "faktor_min": 1.05,
+   "instanzen": 10,
+   "quelle": "run_p02.log, Teil B (Median, Maximum); Mittel und Minimum: Nachrechnung mit dem Kern der Demo (tools/bands_bauen.py)"
+  },
+  {
+   "breite": 80,
+   "n": 8,
+   "labels_ohne_median": 122,
+   "labels_voll_median": 86,
+   "faktor_median": 1.46,
+   "faktor_max": 2.0,
+   "faktor_mittel": 1.47,
+   "faktor_min": 1.12,
+   "instanzen": 10,
+   "quelle": "run_p02.log, Teil B (Median, Maximum); Mittel und Minimum: Nachrechnung mit dem Kern der Demo (tools/bands_bauen.py)"
+  },
+  {
+   "breite": 80,
+   "n": 9,
+   "labels_ohne_median": 182,
+   "labels_voll_median": 127,
+   "faktor_median": 1.46,
+   "faktor_max": 2.38,
+   "faktor_mittel": 1.54,
+   "faktor_min": 1.21,
+   "instanzen": 10,
+   "quelle": "run_p02.log, Teil B (Median, Maximum); Mittel und Minimum: Nachrechnung mit dem Kern der Demo (tools/bands_bauen.py)"
+  },
+  {
+   "breite": 80,
+   "n": 10,
+   "labels_ohne_median": 295,
+   "labels_voll_median": 156,
+   "faktor_median": 1.73,
+   "faktor_max": 2.77,
+   "faktor_mittel": 1.87,
+   "faktor_min": 1.19,
+   "instanzen": 10,
+   "quelle": "run_p02.log, Teil B (Median, Maximum); Mittel und Minimum: Nachrechnung mit dem Kern der Demo (tools/bands_bauen.py)"
+  },
+  {
+   "breite": 80,
+   "n": 12,
+   "labels_ohne_median": 602,
+   "labels_voll_median": 300,
+   "faktor_median": 1.91,
+   "faktor_max": 2.86,
+   "faktor_mittel": 1.92,
+   "faktor_min": 1.32,
+   "instanzen": 10,
+   "quelle": "run_p02.log, Teil B (Median, Maximum); Mittel und Minimum: Nachrechnung mit dem Kern der Demo (tools/bands_bauen.py)"
+  },
+  {
+   "breite": 80,
+   "n": 14,
+   "labels_ohne_median": 1138,
+   "labels_voll_median": 586,
+   "faktor_median": 2.08,
+   "faktor_max": 2.88,
+   "faktor_mittel": 2.09,
+   "faktor_min": 1.45,
+   "instanzen": 10,
+   "quelle": "run_p02.log, Teil B (Median, Maximum); Mittel und Minimum: Nachrechnung mit dem Kern der Demo (tools/bands_bauen.py)"
+  },
+  {
+   "breite": 80,
+   "n": 16,
+   "labels_ohne_median": 1408,
+   "labels_voll_median": 692,
+   "faktor_median": 2.08,
+   "faktor_max": 2.98,
+   "faktor_mittel": 2.13,
+   "faktor_min": 1.52,
+   "instanzen": 10,
+   "quelle": "run_p02.log, Teil B (Median, Maximum); Mittel und Minimum: Nachrechnung mit dem Kern der Demo (tools/bands_bauen.py)"
+  },
+  {
+   "breite": 80,
+   "n": 20,
+   "labels_ohne_median": 4424,
+   "labels_voll_median": 1878,
+   "faktor_median": 2.36,
+   "faktor_max": 4.37,
+   "faktor_mittel": 2.53,
+   "faktor_min": 1.53,
+   "instanzen": 10,
+   "quelle": "run_p02.log, Teil B (Median, Maximum); Mittel und Minimum: Nachrechnung mit dem Kern der Demo (tools/bands_bauen.py)"
+  },
+  {
+   "breite": 200,
+   "n": 7,
+   "labels_ohne_median": 364,
+   "labels_voll_median": 134,
+   "faktor_median": 2.08,
+   "faktor_max": 3.79,
+   "faktor_mittel": 2.27,
+   "faktor_min": 1.66,
+   "instanzen": 10,
+   "quelle": "run_p02.log, Teil B (Median, Maximum); Mittel und Minimum: Nachrechnung mit dem Kern der Demo (tools/bands_bauen.py)"
+  },
+  {
+   "breite": 200,
+   "n": 8,
+   "labels_ohne_median": 602,
+   "labels_voll_median": 279,
+   "faktor_median": 2.26,
+   "faktor_max": 3.17,
+   "faktor_mittel": 2.36,
+   "faktor_min": 1.51,
+   "instanzen": 10,
+   "quelle": "run_p02.log, Teil B (Median, Maximum); Mittel und Minimum: Nachrechnung mit dem Kern der Demo (tools/bands_bauen.py)"
+  },
+  {
+   "breite": 200,
+   "n": 9,
+   "labels_ohne_median": 1436,
+   "labels_voll_median": 530,
+   "faktor_median": 2.35,
+   "faktor_max": 4.96,
+   "faktor_mittel": 2.63,
+   "faktor_min": 1.79,
+   "instanzen": 10,
+   "quelle": "run_p02.log, Teil B (Median, Maximum); Mittel und Minimum: Nachrechnung mit dem Kern der Demo (tools/bands_bauen.py)"
+  },
+  {
+   "breite": 200,
+   "n": 10,
+   "labels_ohne_median": 1768,
+   "labels_voll_median": 597,
+   "faktor_median": 2.86,
+   "faktor_max": 4.16,
+   "faktor_mittel": 2.98,
+   "faktor_min": 2.09,
+   "instanzen": 10,
+   "quelle": "run_p02.log, Teil B (Median, Maximum); Mittel und Minimum: Nachrechnung mit dem Kern der Demo (tools/bands_bauen.py)"
+  },
+  {
+   "breite": 200,
+   "n": 12,
+   "labels_ohne_median": 4219,
+   "labels_voll_median": 1546,
+   "faktor_median": 2.94,
+   "faktor_max": 5.59,
+   "faktor_mittel": 3.18,
+   "faktor_min": 2.13,
+   "instanzen": 10,
+   "quelle": "run_p02.log, Teil B (Median, Maximum); Mittel und Minimum: Nachrechnung mit dem Kern der Demo (tools/bands_bauen.py)"
+  },
+  {
+   "breite": 200,
+   "n": 14,
+   "labels_ohne_median": 11589,
+   "labels_voll_median": 3073,
+   "faktor_median": 3.17,
+   "faktor_max": 6.02,
+   "faktor_mittel": 3.8,
+   "faktor_min": 2.5,
+   "instanzen": 10,
+   "quelle": "run_p02.log, Teil B (Median, Maximum); Mittel und Minimum: Nachrechnung mit dem Kern der Demo (tools/bands_bauen.py)"
+  },
+  {
+   "breite": 200,
+   "n": 16,
+   "labels_ohne_median": 14589,
+   "labels_voll_median": 4453,
+   "faktor_median": 3.39,
+   "faktor_max": 5.36,
+   "faktor_mittel": 3.63,
+   "faktor_min": 2.37,
+   "instanzen": 10,
+   "quelle": "run_p02.log, Teil B (Median, Maximum); Mittel und Minimum: Nachrechnung mit dem Kern der Demo (tools/bands_bauen.py)"
+  },
+  {
+   "breite": 200,
+   "n": 20,
+   "labels_ohne_median": 51322,
+   "labels_voll_median": 14690,
+   "faktor_median": 3.49,
+   "faktor_max": 4.65,
+   "faktor_mittel": 3.56,
+   "faktor_min": 2.65,
+   "instanzen": 10,
+   "quelle": "run_p02.log, Teil B (Median, Maximum); Mittel und Minimum: Nachrechnung mit dem Kern der Demo (tools/bands_bauen.py)"
+  }
+ ],
+ "v1": [
+  {
+   "n": 30,
+   "breite": 40,
+   "k": 1,
+   "laeufe": 6,
+   "anteil_verworfen_prozent": 82.3,
+   "labels_median": 16938,
+   "quelle": "out_v1_n30.txt (Mittel der Anteile je Lauf über die Läufe ohne Abbruch)"
+  },
+  {
+   "n": 30,
+   "breite": 40,
+   "k": 3,
+   "laeufe": 6,
+   "anteil_verworfen_prozent": 80.0,
+   "labels_median": 20525,
+   "quelle": "out_v1_n30.txt (Mittel der Anteile je Lauf über die Läufe ohne Abbruch)"
+  },
+  {
+   "n": 30,
+   "breite": 40,
+   "k": 5,
+   "laeufe": 6,
+   "anteil_verworfen_prozent": 78.2,
+   "labels_median": 20904,
+   "quelle": "out_v1_n30.txt (Mittel der Anteile je Lauf über die Läufe ohne Abbruch)"
+  },
+  {
+   "n": 30,
+   "breite": 100,
+   "k": 1,
+   "laeufe": 6,
+   "anteil_verworfen_prozent": 87.2,
+   "labels_median": 57330,
+   "quelle": "out_v1_n30.txt (Mittel der Anteile je Lauf über die Läufe ohne Abbruch)"
+  },
+  {
+   "n": 30,
+   "breite": 100,
+   "k": 3,
+   "laeufe": 6,
+   "anteil_verworfen_prozent": 86.0,
+   "labels_median": 71951,
+   "quelle": "out_v1_n30.txt (Mittel der Anteile je Lauf über die Läufe ohne Abbruch)"
+  },
+  {
+   "n": 30,
+   "breite": 100,
+   "k": 5,
+   "laeufe": 6,
+   "anteil_verworfen_prozent": 84.4,
+   "labels_median": 92038,
+   "quelle": "out_v1_n30.txt (Mittel der Anteile je Lauf über die Läufe ohne Abbruch)"
+  },
+  {
+   "n": 30,
+   "breite": 200,
+   "k": 1,
+   "laeufe": 6,
+   "anteil_verworfen_prozent": 91.4,
+   "labels_median": 160456,
+   "quelle": "out_v1_n30.txt (Mittel der Anteile je Lauf über die Läufe ohne Abbruch)"
+  },
+  {
+   "n": 30,
+   "breite": 200,
+   "k": 3,
+   "laeufe": 6,
+   "anteil_verworfen_prozent": 90.4,
+   "labels_median": 282955,
+   "quelle": "out_v1_n30.txt (Mittel der Anteile je Lauf über die Läufe ohne Abbruch)"
+  },
+  {
+   "n": 30,
+   "breite": 200,
+   "k": 5,
+   "laeufe": 6,
+   "anteil_verworfen_prozent": 89.5,
+   "labels_median": 348904,
+   "quelle": "out_v1_n30.txt (Mittel der Anteile je Lauf über die Läufe ohne Abbruch)"
+  }
+ ]
+}

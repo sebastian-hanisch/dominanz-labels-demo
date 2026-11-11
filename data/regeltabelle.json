@@ -1,0 +1,167 @@
+{
+ "quelle": "run_p02.log (Teil A, A2) und run_p02_v0.log",
+ "faelle": 180,
+ "instanzen": 60,
+ "kunden": 7,
+ "breiten": [
+  30,
+  80,
+  200
+ ],
+ "elementar": [
+  {
+   "regel": "keine",
+   "verfehlt": 0,
+   "labels_median": 85,
+   "labels_mittel": 188.1,
+   "labels_max": 1404,
+   "quelle": "run_p02.log, Teil A, Zeile „keine Dominanz“"
+  },
+  {
+   "regel": "kosten",
+   "verfehlt": 67,
+   "labels_median": 26,
+   "labels_mittel": 27.4,
+   "labels_max": 49,
+   "quelle": "run_p02.log, Teil A, Zeile „nur Kosten“"
+  },
+  {
+   "regel": "kosten_zeit",
+   "verfehlt": 37,
+   "labels_median": 42,
+   "labels_mittel": 51.4,
+   "labels_max": 150,
+   "quelle": "run_p02.log, Teil A, Zeile „Kosten + Zeit“"
+  },
+  {
+   "regel": "kosten_last",
+   "verfehlt": 20,
+   "labels_median": 52,
+   "labels_mittel": 66.7,
+   "labels_max": 203,
+   "quelle": "run_p02.log, Teil A, Zeile „Kosten + Last“"
+  },
+  {
+   "regel": "kosten_gedaechtnis",
+   "verfehlt": 0,
+   "labels_median": 58,
+   "labels_mittel": 91.8,
+   "labels_max": 378,
+   "quelle": "run_p02.log, Teil A, Zeile „Kosten + Gedächtnis“"
+  },
+  {
+   "regel": "kosten_zeit_last",
+   "verfehlt": 12,
+   "labels_median": 56,
+   "labels_mittel": 73.5,
+   "labels_max": 253,
+   "quelle": "run_p02.log, Teil A, Zeile „Kosten + Zeit + Last“"
+  },
+  {
+   "regel": "kosten_zeit_gedaechtnis",
+   "verfehlt": 0,
+   "labels_median": 58,
+   "labels_mittel": 94.5,
+   "labels_max": 403,
+   "quelle": "run_p02.log, Teil A, Zeile „Kosten + Zeit + Gedächtnis“"
+  },
+  {
+   "regel": "kosten_last_gedaechtnis",
+   "verfehlt": 0,
+   "labels_median": 58,
+   "labels_mittel": 91.8,
+   "labels_max": 378,
+   "quelle": "run_p02.log, Teil A, Zeile „Kosten + Last + Gedächtnis“"
+  },
+  {
+   "regel": "voll",
+   "verfehlt": 0,
+   "labels_median": 58,
+   "labels_mittel": 94.5,
+   "labels_max": 403,
+   "quelle": "run_p02.log, Teil A, Zeile „voll (Kosten, Zeit, Last, Gedächtnis)“"
+  }
+ ],
+ "ng3": [
+  {
+   "regel": "keine",
+   "weicht_ab": 0,
+   "labels_median": 85,
+   "labels_mittel": 254.8,
+   "quelle": "run_p02.log, Teil A2, Zeile „keine Dominanz“"
+  },
+  {
+   "regel": "kosten",
+   "weicht_ab": 72,
+   "labels_median": 26,
+   "labels_mittel": 28.2,
+   "quelle": "run_p02.log, Teil A2, Zeile „nur Kosten“"
+  },
+  {
+   "regel": "kosten_zeit",
+   "weicht_ab": 35,
+   "labels_median": 42,
+   "labels_mittel": 55.4,
+   "quelle": "run_p02.log, Teil A2, Zeile „Kosten + Zeit“"
+  },
+  {
+   "regel": "kosten_last",
+   "weicht_ab": 22,
+   "labels_median": 52,
+   "labels_mittel": 72.6,
+   "quelle": "run_p02.log, Teil A2, Zeile „Kosten + Last“"
+  },
+  {
+   "regel": "kosten_gedaechtnis",
+   "weicht_ab": 31,
+   "labels_median": 40,
+   "labels_mittel": 47.9,
+   "quelle": "run_p02.log, Teil A2, Zeile „Kosten + Gedächtnis“"
+  },
+  {
+   "regel": "kosten_zeit_last",
+   "weicht_ab": 14,
+   "labels_median": 56,
+   "labels_mittel": 81.5,
+   "quelle": "run_p02.log, Teil A2, Zeile „Kosten + Zeit + Last“"
+  },
+  {
+   "regel": "kosten_zeit_gedaechtnis",
+   "weicht_ab": 10,
+   "labels_median": 51,
+   "labels_mittel": 83.7,
+   "quelle": "run_p02.log, Teil A2, Zeile „Kosten + Zeit + Gedächtnis“"
+  },
+  {
+   "regel": "kosten_last_gedaechtnis",
+   "weicht_ab": 2,
+   "labels_median": 56,
+   "labels_mittel": 89.8,
+   "quelle": "run_p02.log, Teil A2, Zeile „Kosten + Last + Gedächtnis“"
+  },
+  {
+   "regel": "voll",
+   "weicht_ab": 0,
+   "labels_median": 57,
+   "labels_mittel": 102.0,
+   "quelle": "run_p02.log, Teil A2, Zeile „voll (Kosten, Zeit, Last, Gedächtnis)“"
+  }
+ ],
+ "verhaeltnis_keine_zu_voll": {
+  "median": 1.42,
+  "min": 1.0,
+  "max": 4.86
+ },
+ "verhaeltnis_kosten_zu_voll": {
+  "median": 0.45,
+  "min": 0.07,
+  "max": 1.0
+ },
+ "verfehlung_nur_kosten": {
+  "faelle": 67,
+  "wert_median": 0.876,
+  "wert_min": 0.183,
+  "wert_max": 1.0,
+  "ohne_verbessernde_route": 0
+ }
+}

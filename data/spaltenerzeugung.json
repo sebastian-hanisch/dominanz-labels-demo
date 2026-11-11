@@ -1,0 +1,118 @@
+{
+ "quelle": "run_p02.log (Teil C)",
+ "kunden": 10,
+ "breite": 80,
+ "instanzen": 10,
+ "zeilen": [
+  {
+   "seed": 0,
+   "schranke_voll": 323.1305,
+   "schranke_kosten": 323.1305,
+   "unterschied_prozent": 0.0,
+   "labels_voll": 1418,
+   "labels_kosten": 863,
+   "iterationen_voll": 6,
+   "iterationen_kosten": 14,
+   "quelle": "run_p02.log, Teil C"
+  },
+  {
+   "seed": 1,
+   "schranke_voll": 469.8422,
+   "schranke_kosten": 475.2985,
+   "unterschied_prozent": 1.161,
+   "labels_voll": 474,
+   "labels_kosten": 312,
+   "iterationen_voll": 5,
+   "iterationen_kosten": 7,
+   "quelle": "run_p02.log, Teil C"
+  },
+  {
+   "seed": 2,
+   "schranke_voll": 400.9736,
+   "schranke_kosten": 403.9995,
+   "unterschied_prozent": 0.755,
+   "labels_voll": 1026,
+   "labels_kosten": 344,
+   "iterationen_voll": 6,
+   "iterationen_kosten": 7,
+   "quelle": "run_p02.log, Teil C"
+  },
+  {
+   "seed": 3,
+   "schranke_voll": 376.1051,
+   "schranke_kosten": 376.1051,
+   "unterschied_prozent": 0.0,
+   "labels_voll": 811,
+   "labels_kosten": 544,
+   "iterationen_voll": 6,
+   "iterationen_kosten": 10,
+   "quelle": "run_p02.log, Teil C"
+  },
+  {
+   "seed": 4,
+   "schranke_voll": 436.4783,
+   "schranke_kosten": 436.8153,
+   "unterschied_prozent": 0.077,
+   "labels_voll": 920,
+   "labels_kosten": 421,
+   "iterationen_voll": 6,
+   "iterationen_kosten": 9,
+   "quelle": "run_p02.log, Teil C"
+  },
+  {
+   "seed": 5,
+   "schranke_voll": 445.2808,
+   "schranke_kosten": 445.2808,
+   "unterschied_prozent": 0.0,
+   "labels_voll": 833,
+   "labels_kosten": 777,
+   "iterationen_voll": 6,
+   "iterationen_kosten": 16,
+   "quelle": "run_p02.log, Teil C"
+  },
+  {
+   "seed": 6,
+   "schranke_voll": 338.9513,
+   "schranke_kosten": 344.6845,
+   "unterschied_prozent": 1.691,
+   "labels_voll": 1379,
+   "labels_kosten": 411,
+   "iterationen_voll": 9,
+   "iterationen_kosten": 8,
+   "quelle": "run_p02.log, Teil C"
+  },
+  {
+   "seed": 7,
+   "schranke_voll": 371.2091,
+   "schranke_kosten": 402.673,
+   "unterschied_prozent": 8.476,
+   "labels_voll": 1890,
+   "labels_kosten": 387,
+   "iterationen_voll": 8,
+   "iterationen_kosten": 8,
+   "quelle": "run_p02.log, Teil C"
+  },
+  {
+   "seed": 8,
+   "schranke_voll": 389.9732,
+   "schranke_kosten": 389.9732,
+   "unterschied_prozent": 0.0,
+   "labels_voll": 830,
+   "labels_kosten": 880,
+   "iterationen_voll": 6,
+   "iterationen_kosten": 16,
+   "quelle": "run_p02.log, Teil C"
+  },
+  {
+   "seed": 9,
+   "schranke_voll": 452.997,
+   "schranke_kosten": 452.997,
+   "unterschied_prozent": -0.0,
+   "labels_voll": 662,
+   "labels_kosten": 353,
+   "iterationen_voll": 5,
+   "iterationen_kosten": 7,
+   "quelle": "run_p02.log, Teil C"
+  }
+ ]
+}
