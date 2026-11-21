@@ -84,7 +84,7 @@ Listen für schnelle Abfragen kürzester Wege, hier sind es Teilwege im Preispro
 with st.expander("💬 In einfachen Worten"):
     st.markdown(
         """
-Beim Suchen des besten Weges mit Zeitfenstern, Ladegrenze und höchstens einem Besuch je Kunde hält das Label-Verfahren jeden Teilweg als **Label** fest: Kosten, Zeit, verbrauchte Last und besuchte Kunden. Ein Label darf gestrichen werden, wenn ein anderes Label am selben Kunden in allen vier Angaben mindestens so gut ist (**Dominanz**). Dann kann jede Fortsetzung des gestrichenen Labels auch vom anderen gefahren werden und wird nicht teurer. Wer nur die Kosten vergleicht, streicht zu großzügig und verliert in manchen Fällen den besten Weg. Die Demo zeigt das am Handbeispiel Schritt für Schritt, an vielen Zufallsfällen, an einem Größenversuch und an der ganzen Spaltenerzeugung. Gezählt werden erzeugte Labels, keine Sekunden.
+Beim Suchen des besten Weges mit Zeitfenstern, Ladegrenze und höchstens einem Besuch je Kunde hält das Label-Verfahren jeden Teilweg als **Label** fest: Kosten, Zeit, verbrauchte Last und besuchte Kunden. Ein Label darf gestrichen werden, wenn ein anderes Label am selben Kunden in allen vier Angaben mindestens so gut ist (**Dominanz**). Dann kann jede Fortsetzung des gestrichenen Labels auch vom anderen gefahren werden und wird nicht teurer. Wer nur die Kosten vergleicht, streicht zu großzügig und verliert in manchen Fällen den besten Weg. Die Demo zeigt das am Handbeispiel Schritt für Schritt, an vielen Zufallsfällen, an einem Größenversuch und an der ganzen Spaltengenerierung. Gezählt werden erzeugte Labels, keine Sekunden.
 
 [Ausführlich und verständlich erklärt, mit Fachteil](https://sebastianhanisch.net/dominanz-teilwege-erklaert.html)
         """
