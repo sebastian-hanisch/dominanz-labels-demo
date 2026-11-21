@@ -169,7 +169,7 @@ Annahmen, Grenzen und bekannte Probleme, wie sie auch in der App stehen (ein Tes
 
 - Keine Aussage über Rechenzeit und keine Zeitmessung in der App.
 - Kein Zeitfenster-Ausbau (Fenster und Warten sind hier nur eine Zahl im Label), keine zweite Grenze neben Last, keine Elementaritäts-Verfahren im Detail (nur der Befund, dass die Last-Bedingung bei Prüfung des Gedächtnisses elementar überflüssig ist, weil die Last aus dem Gedächtnis folgt, und bei k = 3 nicht).
-- Keine Eimer und keine gelernten Streichregeln; keine anderen Dominanzregeln aus der Literatur.
+- Keine Buckets und keine gelernten Streichregeln; keine anderen Dominanzregeln aus der Literatur.
 - Keine Live-Spaltengenerierung in der App (Experiment 5 zeigt feste Messreihen, die Tests rechnen sie neu).
 - Kein PDF-Export.
 
