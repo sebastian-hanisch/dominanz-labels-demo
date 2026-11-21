@@ -365,10 +365,10 @@ def verdict_size(n: int, width: int, labels_none: int, labels_full: int, dominat
 
 
 def verdict_colgen(summary: dict) -> tuple[str, str]:
-    """Experiment 5: endet die Spaltenerzeugung mit „nur Kosten“ bei einer höheren Zahl als mit der vollen Regel?"""
+    """Experiment 5: endet die Spaltengenerierung mit „nur Kosten“ bei einer höheren Zahl als mit der vollen Regel?"""
     if summary["hoeher"] == 0:
-        return "success", f"In allen {summary['instanzen']} Instanzen endet die Spaltenerzeugung mit „nur Kosten“ bei derselben Zahl wie mit der vollen Regel."
-    return "warning", (f"Mit „nur Kosten“ endet die Spaltenerzeugung in {summary['hoeher']} von {summary['instanzen']} Instanzen bei einer höheren Zahl als mit der "
+        return "success", f"In allen {summary['instanzen']} Instanzen endet die Spaltengenerierung mit „nur Kosten“ bei derselben Zahl wie mit der vollen Regel."
+    return "warning", (f"Mit „nur Kosten“ endet die Spaltengenerierung in {summary['hoeher']} von {summary['instanzen']} Instanzen bei einer höheren Zahl als mit der "
                        f"vollen Regel (Abstand zur Schranke der vollen Regel, bezogen auf diese: Mittel {fmt_pct(summary['mittel'], 3)}, Maximum {fmt_pct(summary['maximum'], 3)}; "
                        f"das Mittel läuft über alle {summary['instanzen']} Instanzen, auch über die {summary['instanzen'] - summary['hoeher']} ohne Unterschied). "
                        f"Diese Zahl ist dann keine gültige Untergrenze mehr, weil Spalten fehlen.")

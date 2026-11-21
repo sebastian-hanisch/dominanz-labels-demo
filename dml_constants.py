@@ -67,16 +67,16 @@ ASSUMPTIONS_MARKDOWN = """\
 **Annahmen**
 - Eigene Instanzen im Stil der Solomon-Instanzen (Quadrat 100 × 100, Fahrzeit gleich Entfernung, Bedienzeit 10, Kapazität 70, Horizont 300), **nicht die Originalinstanzen**; das Handbeispiel rechnet mit dem Manhattan-Abstand auf einem Gitter.
 - Warten vor einem Zeitfenster ist erlaubt und kostenlos; nur deshalb gilt „früher ankommen ist nie schlechter“ als Dominanzbedingung für die Zeit.
-- Die Dualpreise der Größenversuche, der Wachstumsreihen bis 20 Kunden und der Regel-Tabelle sind zufällig gezogen (gleichverteilt zwischen 20 und 70), nicht die einer echten Spaltenerzeugung; die ganze Spaltenerzeugung rechnen nur die 30-Kunden-Reihe (Experiment 4) und Teil C der Messreihen (Experiment 5).
+- Die Dualpreise der Größenversuche, der Wachstumsreihen bis 20 Kunden und der Regel-Tabelle sind zufällig gezogen (gleichverteilt zwischen 20 und 70), nicht die einer echten Spaltengenerierung; die ganze Spaltengenerierung rechnen nur die 30-Kunden-Reihe (Experiment 4) und Teil C der Messreihen (Experiment 5).
 - Gezählt werden erzeugte Labels, nicht Sekunden.
 
 **Grenzen**
-- Die Regel-Tabelle (180 Fälle) hat nur 7 Kunden; die Messreihen zum Wachstum haben je 10 Instanzen je Zelle; die Spaltenerzeugung ist an 10 Instanzen mit 10 Kunden gemessen.
+- Die Regel-Tabelle (180 Fälle) hat nur 7 Kunden; die Messreihen zum Wachstum haben je 10 Instanzen je Zelle; die Spaltengenerierung ist an 10 Instanzen mit 10 Kunden gemessen.
 - Gemessen sind genau die Regeln dieser Demo, nicht andere Dominanzregeln aus der Literatur (etwa mit Erweiterungsfunktionen oder bei mehr als zwei Grenzen).
 - Die Demo macht **keine allgemeine Aussage über Rechenzeit**: In reinem Python kostet die Dominanzprüfung je Label Zeit; in einer einzelnen Messung der README (20 Kunden, Fensterbreite 200, auf einem ausgelasteten Rechner, nicht im Test, vom Rechner abhängig) war die Rechnung mit Dominanz langsamer als ohne, obwohl sie weniger Labels erzeugt; für andere Größen, auch für 30 Kunden, gibt es keine Zeitmessung.
 
 **Bekannte Probleme und Unsicherheiten**
 - Ursachen („weil …“) sind Deutungen, wo es dasteht; gemessen sind die Zählungen.
-- Die Zahlen der Spaltenerzeugung (Experiment 5) hängen vom Weg ab, den der Löser des Master-Problems nimmt, und können mit einer anderen Version der Bibliothek leicht abweichen.
+- Die Zahlen der Spaltengenerierung (Experiment 5) hängen vom Weg ab, den der Löser des Master-Problems nimmt, und können mit einer anderen Version der Bibliothek leicht abweichen.
 - Die Darstellung der Tabellen und Diagramme ist im Browser am Computer und in einem 375 Pixel breiten Fenster durchgesehen, nicht auf anderen Geräten oder in anderen Browsern. Die Diagramme haben keine Auswahl per Mausklick.
 """

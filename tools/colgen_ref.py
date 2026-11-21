@@ -1,4 +1,4 @@
-"""Spaltenerzeugung (Überdeckungs-Master) für die Nachrechnung von Teil C: nur für Tests und Werkzeuge, nicht für die App (braucht scipy).
+"""Spaltengenerierung (Überdeckungs-Master) für die Nachrechnung von Teil C: nur für Tests und Werkzeuge, nicht für die App (braucht scipy).
 
 Master: Kosten der Routen minimieren, jeder Kunde mindestens einmal überdeckt (LP, HiGHS). Die Dualpreise des Masters gehen als Kundenpreise
 in das Label-Verfahren der Demo (`dml_algorithm.price`); neue Routen mit negativen reduzierten Kosten werden als Spalten ergänzt, bis keine
@@ -20,7 +20,7 @@ def route_cost(inst, route) -> float:
 
 
 def colgen(inst, k: int, rule, max_iter: int = 400) -> dict:
-    """Schranke, Iterationen, Spalten, erzeugte und gestrichene Labels der Spaltenerzeugung mit der gegebenen Dominanzregel."""
+    """Schranke, Iterationen, Spalten, erzeugte und gestrichene Labels der Spaltengenerierung mit der gegebenen Dominanzregel."""
     from scipy.optimize import linprog
 
     n = inst.n

@@ -1,8 +1,8 @@
 """Jede Zahl der README und der App-Texte wird hier nachgerechnet (DEMO-PLAYBOOK §4, §11a). Zeiten stehen in keinem Test.
 
 Die festen Messreihen (data/*.json) stammen aus den Rohausgaben der Messungen der Planung (Quelle je Zeile). Hier werden sie mit dem Kern dieser Demo **neu gerechnet**:
-Regel-Tabelle (180 Fälle, elementar und Gedächtnis k = 3), jede Zelle des Wachstums (10 Instanzen), die Spaltenerzeugung für alle 10 Instanzen, ein Lauf der 30-Kunden-Reihe
-und die Gegenprobe ohne Dreiecksungleichung. Plattformabhängig ist nur der Weg des LP-Lösers in der Spaltenerzeugung bei „nur Kosten“: dort stehen Bänder statt exakter Gleichheit."""
+Regel-Tabelle (180 Fälle, elementar und Gedächtnis k = 3), jede Zelle des Wachstums (10 Instanzen), die Spaltengenerierung für alle 10 Instanzen, ein Lauf der 30-Kunden-Reihe
+und die Gegenprobe ohne Dreiecksungleichung. Plattformabhängig ist nur der Weg des LP-Lösers in der Spaltengenerierung bei „nur Kosten“: dort stehen Bänder statt exakter Gleichheit."""
 
 import json
 import statistics
@@ -151,7 +151,7 @@ def test_growth_v1_rows_and_one_recomputed_run():
     assert run["bound"] == pytest.approx(862.5837, abs=1e-2)
 
 
-# --- Spaltenerzeugung -------------------------------------------------------------------------------------------------------------------------
+# --- Spaltengenerierung -------------------------------------------------------------------------------------------------------------------------
 
 def test_colgen_all_ten_instances_recomputed_and_summary():
     pytest.importorskip("scipy")
@@ -389,7 +389,7 @@ def test_readme_wording_after_the_review():
     assert "obwohl die volle Dominanz dort weniger Labels erzeugt (Faktor 3,49 im Median, siehe Wachstumstabelle)" in README
     assert "war die Rechnung mit Dominanz langsamer als ohne, obwohl sie weniger Labels erzeugt" in constants and "weniger Labels erzeugt; für andere Größen" in README
     assert "(20 Kunden, Fensterbreite 200, auf einem ausgelasteten Rechner, nicht im Test, vom Rechner abhängig) war die Rechnung mit Dominanz langsamer als ohne" in README
-    assert "Ausnahme ist die 30-Kunden-Reihe in Experiment 4 (je 6 Instanzen), die wie Experiment 5 die ganze Spaltenerzeugung rechnet" in README
+    assert "Ausnahme ist die 30-Kunden-Reihe in Experiment 4 (je 6 Instanzen), die wie Experiment 5 die ganze Spaltengenerierung rechnet" in README
     assert "nur Experiment 5 rechnet" not in README and "nur Teil C der Messreihen" not in README
     assert "sofern Warten erlaubt und kostenlos ist und keine weiteren Grenzen als Zeit und Last gelten" in README
     assert "früher ankommen ist immer besser" not in README

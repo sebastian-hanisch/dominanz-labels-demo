@@ -3,9 +3,9 @@
 Aufruf (im Ordner der Demo):  python tools/bands_bauen.py <Ordner mit run_p02.log und out_v1_n30.txt> [--ohne-nachrechnung]
 
 Quellen (jede Zeile der JSON-Dateien nennt ihre Quelle):
-- run_p02.log            Teil A (180 Fälle, elementar), Teil A2 (dieselben Fälle, Gedächtnis k = 3), Teil B (Wachstum der Labels), Teil C (Spaltenerzeugung)
+- run_p02.log            Teil A (180 Fälle, elementar), Teil A2 (dieselben Fälle, Gedächtnis k = 3), Teil B (Wachstum der Labels), Teil C (Spaltengenerierung)
 - run_p02_v0.log         Orakelvergleich der 180 Fälle (Zählung); steht in der Tabelle als Zusammenfassung
-- out_v1_n30.txt         30 Kunden, ganze Spaltenerzeugung, Gedächtnis k = 1, 3, 5: Anteil der verworfenen Labels (Mittel über 6 Instanzen)
+- out_v1_n30.txt         30 Kunden, ganze Spaltengenerierung, Gedächtnis k = 1, 3, 5: Anteil der verworfenen Labels (Mittel über 6 Instanzen)
 
 Die Spalten „Mittel“ und „Minimum“ des Faktors in Teil B stehen nicht in den Rohausgaben. Sie werden mit dem Kern der Demo nachgerechnet;
 dabei muss der Median des Faktors und das Maximum mit run_p02.log übereinstimmen (sonst Abbruch), das ist zugleich die Prüfung, dass die

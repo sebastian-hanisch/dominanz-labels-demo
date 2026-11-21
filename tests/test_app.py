@@ -199,7 +199,7 @@ def test_texts_with_their_conditions_and_without_unmeasured_comparatives():
     assert C.LAST_FROM_MEMORY_TEXT in captions
     growth = next(t for t in captions if t.startswith("Hinweise: Bei 7 Kunden"))
     assert "deutlich mehr" not in growth and "wird der Faktor im Median mit der Kundenzahl größer oder bleibt gleich" in growth
-    assert any("Dualpreise aus der Spaltenerzeugung, nicht zufällig" in m.value for m in at.markdown)
+    assert any("Dualpreise aus der Spaltengenerierung, nicht zufällig" in m.value for m in at.markdown)
     warnings = _texts(at, "warning")
     assert any("Abstand zur Schranke der vollen Regel, bezogen auf diese: Mittel 1,216 %, Maximum 8,476 %" in t and "auch über die 5 ohne Unterschied" in t for t in warnings)
     ends = next(m.value for m in at.markdown if "| Annahme |" in m.value)

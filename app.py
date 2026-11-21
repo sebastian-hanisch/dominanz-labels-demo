@@ -1,8 +1,8 @@
 """Dominanz: wann darf ein Label gehen? - interaktive Konzept-Demo
 Sebastian Hanisch - Operations Research und Machine Learning
 
-Label-Verfahren für den Weg mit den kleinsten reduzierten Kosten (Preisproblem der Spaltenerzeugung): Wann darf ein Teilweg (Label) gestrichen werden,
-ohne den besten Weg zu verlieren? Handbeispiel Schritt für Schritt, Regel-Tabelle aus 180 Fällen, Größenversuch live, Folge für die Spaltenerzeugung.
+Label-Verfahren für den Weg mit den kleinsten reduzierten Kosten (Preisproblem der Spaltengenerierung): Wann darf ein Teilweg (Label) gestrichen werden,
+ohne den besten Weg zu verlieren? Handbeispiel Schritt für Schritt, Regel-Tabelle aus 180 Fällen, Größenversuch live, Folge für die Spaltengenerierung.
 
 Lauffähig mit: streamlit run app.py
 """
@@ -71,12 +71,12 @@ st.markdown(
 Beim Suchen des **besten Weges mit mehreren Grenzen** (Zeitfenster, Last, jeder Kunde höchstens einmal) hält das **Label-Verfahren** jeden Teilweg als **Label** fest:
 Kosten, verbrauchte Zeit, verbrauchte Last und besuchte Kunden. Damit es nicht alle Teilwege verfolgen muss, **streicht** es ein Label, das ein anderes Label
 am selben Kunden **dominiert**. Diese Demo fragt: **Wie großzügig darf man streichen?** Wer nie streicht, erzeugt viele Labels; wer zu großzügig streicht,
-verliert den besten Weg. Beides wird gezählt: am Handbeispiel Schritt für Schritt, an 180 Fällen, an einem Größenversuch und an der ganzen Spaltenerzeugung.
+verliert den besten Weg. Beides wird gezählt: am Handbeispiel Schritt für Schritt, an 180 Fällen, an einem Größenversuch und an der ganzen Spaltengenerierung.
 
 Weiter unten: die Expander **💬 In einfachen Worten** und **So funktioniert die Dominanz** (beide zuerst), fünf Experimente (**🔬**), **🚧 Wo die Annahmen enden**, **📐 Mathematische Formulierung** und
 **⚠️ Annahmen, Grenzen und bekannte Probleme**. Die Anwendung dieses Verfahrens in einem Fall (Besatzungsplanung im Zugverkehr) zeigt
 [crew-pairing-demo](https://github.com/sebastian-hanisch/crew-pairing-demo). Nicht zu verwechseln mit [hub-labeling-demo](https://github.com/sebastian-hanisch/hub-labeling-demo): Dort sind Labels vorberechnete
-Listen für schnelle Abfragen kürzester Wege, hier sind es Teilwege im Preisproblem der Spaltenerzeugung.
+Listen für schnelle Abfragen kürzester Wege, hier sind es Teilwege im Preisproblem der Spaltengenerierung.
 """
 )
 
@@ -343,7 +343,7 @@ st.dataframe(
     column_config={"Faktor Median": st.column_config.NumberColumn(format="%.2f"), "Faktor Mittel": st.column_config.NumberColumn(format="%.2f"),
                    "Faktor Maximum": st.column_config.NumberColumn(format="%.2f")},
 )
-st.markdown("**Größere Instanzen (30 Kunden), ganze Spaltenerzeugung (Dualpreise aus der Spaltenerzeugung, nicht zufällig), nicht elementar:** Anteil der erzeugten Labels, die mit voller Dominanz gestrichen werden (je Zeile das Mittel der Anteile je Lauf, gemittelt über die Läufe ohne Abbruch; je 6 Instanzen)")
+st.markdown("**Größere Instanzen (30 Kunden), ganze Spaltengenerierung (Dualpreise aus der Spaltengenerierung, nicht zufällig), nicht elementar:** Anteil der erzeugten Labels, die mit voller Dominanz gestrichen werden (je Zeile das Mittel der Anteile je Lauf, gemittelt über die Läufe ohne Abbruch; je 6 Instanzen)")
 st.dataframe(
     pd.DataFrame(
         {
@@ -364,10 +364,10 @@ st.markdown("---")
 
 # --- Experiment 5 --------------------------------------------------------------------------------------------------------------------------
 
-st.subheader("🔬 Experiment 5: Was passiert in der Spaltenerzeugung?")
+st.subheader("🔬 Experiment 5: Was passiert in der Spaltengenerierung?")
 cg = tables_colgen
 st.caption(
-    f"Feste Messreihe: {cg['instanzen']} Instanzen mit {cg['kunden']} Kunden, Fensterbreite {cg['breite']}, elementar. Die Spaltenerzeugung ruft das Label-Verfahren in jeder Runde mit neuen Dualpreisen auf "
+    f"Feste Messreihe: {cg['instanzen']} Instanzen mit {cg['kunden']} Kunden, Fensterbreite {cg['breite']}, elementar. Die Spaltengenerierung ruft das Label-Verfahren in jeder Runde mit neuen Dualpreisen auf "
     "und endet, wenn es keinen Weg mit negativen reduzierten Kosten mehr findet. Ihre Schlusszahl (die **Schranke**) ist nur dann eine gültige Untergrenze für die Gesamtplanung, "
     "wenn das Label-Verfahren jedes Mal den besten Weg fand. Verglichen: volle Dominanz gegen „nur Kosten“."
 )
@@ -390,7 +390,7 @@ st.plotly_chart(build_colgen_chart(cg["zeilen"]), width="stretch", key="colgen_c
 summary = ev.colgen_summary(cg["zeilen"])
 kind, text = ev.verdict_colgen(summary)
 getattr(st, kind)(text)
-st.caption("Die Dualpreise kommen hier aus der Spaltenerzeugung selbst, nicht aus der Zufallsziehung der anderen Experimente. Eine Schranke, die bei „nur Kosten“ gleich bleibt (Unterschied 0), "
+st.caption("Die Dualpreise kommen hier aus der Spaltengenerierung selbst, nicht aus der Zufallsziehung der anderen Experimente. Eine Schranke, die bei „nur Kosten“ gleich bleibt (Unterschied 0), "
            "zeigt nur, dass die fehlenden Wege in dieser Instanz nicht nötig waren.")
 
 st.markdown("---")
@@ -407,7 +407,7 @@ st.markdown(
 | **Jeder Kunde höchstens einmal** (elementar) | Mit lockererem Gedächtnis (k = 3) weicht „Kosten + Gedächtnis“ in {ng_rows['kosten_gedaechtnis']['weicht_ab']} von {cases} Fällen ab, die volle Regel in keinem. | Experiment 3 |
 | **Warten ist erlaubt und kostenlos** | Ohne Warten gilt „früher ankommen ist nie schlechter“ nicht; die Zeitbedingung wäre anders zu fassen. | nicht gemessen |
 | **Nur Zeit und Last als Grenzen** | Jede weitere Grenze (zum Beispiel Fahrerzeit) braucht eine eigene Bedingung in der Dominanz. | nicht gemessen |
-| **Zufällige Dualpreise** (Experimente 3 und 4, außer der 30-Kunden-Reihe) | In einer echten Spaltenerzeugung ändern sich die Dualpreise in jeder Runde; Experiment 5 rechnet das für {cg['instanzen']} Instanzen, die 30-Kunden-Reihe in Experiment 4 für je 6 Instanzen. | Experiment 5, Experiment 4 (30 Kunden) |
+| **Zufällige Dualpreise** (Experimente 3 und 4, außer der 30-Kunden-Reihe) | In einer echten Spaltengenerierung ändern sich die Dualpreise in jeder Runde; Experiment 5 rechnet das für {cg['instanzen']} Instanzen, die 30-Kunden-Reihe in Experiment 4 für je 6 Instanzen. | Experiment 5, Experiment 4 (30 Kunden) |
 | **Bis 20 Kunden** | Bei 30 Kunden ist nur der Anteil gestrichener Labels gemessen, nicht der Faktor. | Experiment 4 |
 """
 )
