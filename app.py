@@ -94,8 +94,8 @@ Beim Suchen des besten Weges mit Zeitfenstern, Ladegrenze und höchstens einem B
 with st.expander("So funktioniert die Dominanz", expanded=True):
     st.markdown(
         """
-1. **Ein Label ist ein Teilweg in vier Zahlen:** die **reduzierten Kosten** bisher (Weglänge minus die **Dualpreise** der besuchten Kunden; der Dualpreis ist der Betrag, den die
-   übergeordnete Planung einem Kunden zurechnet), die **Zeit** (Beginn der Bedienung; wer zu früh kommt, wartet kostenlos), die verbrauchte **Last** und die **besuchten Kunden**
+1. **Ein Label ist ein Teilweg in vier Zahlen:** die **reduzierten Kosten** bisher (Weglänge minus die **Dualpreise** der besuchten Kunden; der Dualpreis ist der Betrag, den das
+   Masterproblem der Spaltengenerierung einem Kunden zurechnet), die **Zeit** (Beginn der Bedienung; wer zu früh kommt, wartet kostenlos), die verbrauchte **Last** und die **besuchten Kunden**
    (das „Gedächtnis“: ein Kunde darf nicht noch einmal besucht werden).
 2. **Das Verfahren verlängert Labels in Zeitreihenfolge** um je einen Kunden. Am selben Kunden können sehr viele Labels enden (verschiedene Wege dorthin).
 3. **Ein Label O dominiert ein Label N am selben Kunden,** wenn O in allem mindestens so gut ist, was die Zukunft des Weges beeinflusst: Kosten **nicht höher**, Zeit **nicht später**,
